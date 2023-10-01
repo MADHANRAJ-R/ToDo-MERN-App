@@ -12,7 +12,7 @@ const PORT = process.env.PORT || 3001;
 
 app.use(cors(
   {
-    origin: [""],
+    origin: ["https://to-do-mern-app-client.vercel.app"],
     methods: ["POST","GET","PUT","DELETE"],
     credentials: true
   }
