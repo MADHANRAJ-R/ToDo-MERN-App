@@ -10,7 +10,13 @@ app.use(express.json());
 
 const PORT = process.env.PORT || 3001;
 
-app.use(cors());
+app.use(cors(
+  {
+    origin: [""],
+    methods: ["POST","GET","PUT","DELETE"],
+    credentials: true
+  }
+));
 
 const TodoItemRoutes = require('./Routes/todoroutes');
 
