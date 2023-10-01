@@ -1,0 +1,22 @@
+POST http://localhost:3001/post
+Content-Type: application/json
+
+{
+    "item":"item 1"
+}
+###
+GET http://localhost:3001/get
+Content-Type: application/json
+
+###
+PUT http://localhost:3001/put/64ff4ae96ab6b113e7c26db8
+Content-Type: application/json
+
+{
+    "item": "item 1 updated"
+}
+
+###
+DELETE  http://localhost:3001/delete/64ff4ae96ab6b113e7c26db8
+Content-Type: application/json
+
